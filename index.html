@@ -6,6 +6,8 @@
     <title>Minyaw | E-Portfolio</title>
     <meta name="description" content="Eportfolio of Gabriela Betancourth Rodrigues (Minyaw) showcasing skills, work experience, projects, and more.">
     <meta name="author" content="Gabriela Betancourth Rodrigues">
+    <link rel="icon" href="/assets/images/other/logo/Rosa.png" type="image/png">
+
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,33 +26,32 @@
     <header id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 flex items-center justify-center py-6 z-50 border-b border-white/20 transition-all duration-500 ease-in-out">
       <nav class="flex flex-col items-center space-y-4">
         <div class="flex space-x-6">
-          <a href="#home" class="text-gray-700 hover:underline font-medium">Home</a>
-          <a href="#projects" class="text-gray-700 hover:underline font-medium">Projects</a>
-          <a href="#cv" class="text-gray-700 hover:underline font-medium">CV</a>
-          <a href="#about" class="text-gray-700 hover:underline font-medium">About me</a>
+          <a href="index.html" class="text-gray-700 hover:underline font-medium">Home</a>
+          <a href="aboutme.html" class="text-gray-700 hover:underline font-medium">About me</a>
+          <a href="projectsPage.html" class="text-gray-700 hover:underline font-medium">Projects</a>
+          <a href="cv.html" class="text-gray-700 hover:underline font-medium">CV</a>
         </div>
       </nav>
     </header>
-    
 
     <!-- Hero Section -->
     <section class="bg-white p-6 flex flex-col md:flex-row items-center justify-center h-[94vh]">
       <div class="flex items-center space-x-10">
-        <div id="logo" class=" transition-colors duration-500">
-          <!-- Image Logo -->
-          <img src="assets/images/other/logo/logo.svg" alt="Logo" class="w-[15vh]" />
+        <div id="logo" class="transition-all duration-[2000ms] ease-in-out">
+          <img id="logo-img" src="assets/images/other/logo/Azul.png" alt="Logo" class="w-[15vh] transition-opacity duration-[2000ms] ease-in-out opacity-100" />
         </div>
-    
+
         <!-- Text + Button -->
         <div class="text-center md:text-left text-black">
-          <h1 class="text-3xl font-bold">Hi there,</h1>
-          <p class="text-2xl">I'm Minyaw! A creative mind, geeky heart,<br />building the future one pixel at a time.</p>
-          <a id="cv-button" href="#" class="mt-4 inline-block px-6 py-2 text-white rounded-full text-lg font-semibold transition-colors duration-300" style="background-color: #00caff;">Check my CV</a>
+          <h1 class="text-3xl font-bold">Hey, I'm Gaby</h1>
+          <p class="text-2xl text-gray-700">Creative mind, geeky heart,<br />building the future one pixel at a time.</p>
+
+          <a id="cv-button" href="cv.html" class="mt-4 inline-block px-6 py-2 text-white rounded-full text-lg font-semibold" style="background-color: #00caff;">
+            Check my CV
+          </a>
         </div>
       </div>
     </section>
-    
-    <script src="assets/js/logoColorSwitcher.js"></script>    
 
     <!-- Skills -->
     <section class="bg-[#000319] text-white overflow-hidden justify-items-center py-4">
@@ -99,20 +100,23 @@
     <section id="about" class="py-12 px-6 md:px-20">
       <h2 class="text-2xl font-bold mb-6 text-center text-white">About Me</h2>
       <div class="flex flex-col md:flex-row items-center md:space-x-10">
-        <div class="flex-1 text-justify text-white">
-          <p class="mb-4">
-            I'm a developer currently studying Computer Science, with a background in Graphic Design, Marketing, and Advertising. I’m passionate about blending creativity with technology to build meaningful digital experiences.
+        
+        <div class="flex-1 text-white space-y-4">
+          <p>
+            I’m <span class="font-semibold text-[#00caff]">Gaby</span> — a developer with a creative twist. Currently diving into Computer Science while drawing from a background in design and marketing.
           </p>
-          <p class="mb-4">
-            My journey started with curiosity and has grown through my university studies, where I’m deepening my skills in programming languages like Java, Python, and PHP, alongside web technologies like HTML, CSS, and JavaScript.
-          </p>
-          <p class="mb-4">
-            With my design and marketing background, I focus on creating user-friendly, visually appealing projects while learning the importance of design systems and clean, scalable code.
-          </p>
-          <p class="mb-4">
-            When I'm not coding, you’ll find me enjoying anime, gaming, and exploring geeky hobbies. I’m always striving to balance my professional growth with personal passions.
+
+          <ul class="list-disc list-inside space-y-2 pl-2 text-sm md:text-base text-white/90">
+            <li>Currently learning Java, Python, and PHP</li>
+            <li>Exploring how algorithms and data structures power real-world applications</li>
+            <li>My geek side inspires my creativity and curiosity — it fuels playful thinking and a better sense of user connection</li>
+          </ul>
+
+          <p class="pt-2 text-white/80">
+            This is just a glimpse — get to know more about me <a href="aboutme.html" class="text-[#00caff] underline hover:text-[#00caff] transition">here</a>.
           </p>
         </div>
+
         <img src="./assets/images/other/me2.jpg" alt="My image" class="h-[25vh] mt-6 md:mt-0 rounded-full object-cover">
       </div>
     </section>
@@ -457,12 +461,15 @@
 
     <!-- Projects -->
     <section id="projects" class="bg-white py-12 px-6 md:px-20">
-      <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h2 class="text-2xl font-bold mb-6 text-center text-black">Projects</h2>
+      <p class="text-center text-gray-700 mb-10">
+        A collection of creative and technical projects I’ve worked on over the past two years — from design experiments to full-stack builds.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
         <!-- Project 1 -->
-        <a href="#project1" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
-          <!-- Background Image and Title -->
-          <div class="h-60 bg-cover bg-center" style="background-image: url('./assets/images/projects/dcdentaire.PNG');">
+        <a href="projects/project1.html" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('./assets/images/projects/dcdentaire.PNG');">
             <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h3 class="text-white text-xl font-semibold">Project 1</h3>
             </div>
@@ -470,9 +477,8 @@
         </a>
 
         <!-- Project 2 -->
-        <a href="#project2" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
-          <!-- Background Image and Title -->
-          <div class="h-60 bg-cover bg-center" style="background-image: url('./path/to/your/image2.jpg');">
+        <a href="projects/project2.html" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project2.jpg');">
             <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h3 class="text-white text-xl font-semibold">Project 2</h3>
             </div>
@@ -480,34 +486,48 @@
         </a>
 
         <!-- Project 3 -->
-        <a href="#project3" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
-          <!-- Background Image and Title -->
-          <div class="h-60 bg-cover bg-center" style="background-image: url('./path/to/your/image3.jpg');">
+        <a href="projects/project3.html" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project3.jpg');">
             <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h3 class="text-white text-xl font-semibold">Project 3</h3>
             </div>
           </div>
         </a>
+
+        <!-- Project 4 -->
+        <a href="projects/project4.html" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <div class="h-[400px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project4.jpg');">
+            <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 class="text-white text-xl font-semibold">Project 4</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Explore Button -->
+      <div class="flex justify-center">
+        <a href="projectsPage.html" class="px-6 py-2 bg-[#00caff] text-white rounded-full font-semibold hover:bg-[#009dcf] transition-all duration-300">
+          Explore All Projects
+        </a>
       </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 mt-12">
-      <div class="container mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+      <div class="container mx-auto flex flex-col md:flex-row justify-around items-start gap-8">
         
         <!-- Logo -->
         <div class="flex items-center justify-center space-x-2">
-          <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-20">
+          <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-[5vh]">
         </div>
         
         <!-- Navigation -->
         <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
           <h3 class="font-semibold text-lg">Navigation</h3>
-          <a href="#home" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
-          <a href="#projects" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
-          <a href="#cv" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
-          <a href="#about" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
+          <a href="index.html" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
+          <a href="projectsPage.html" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
+          <a href="cv.html" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
+          <a href="aboutme.html" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
         </div>
         
         <!-- Find Me (Social Media Links) -->
@@ -521,6 +541,8 @@
             LinkedIn
             <i class="fab fa-linkedin fa-lg ml-2"></i>
           </a>
+          <a href="https://www.behance.net/betancourthgab" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">Behance<i class="fa-brands fa-square-behance fa-lg ml-2"></i>
+          </a>
         </div>
     
         <!-- Language Switcher -->
@@ -531,7 +553,6 @@
         </div>
       </div>
     </footer>
-    
     <div class="text-center text-white text-sm py-4">
       © 2025 Gabriela Betancourth Rodrigues. All rights reserved.
     </div>
