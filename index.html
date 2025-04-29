@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyaw | E-Portfolio</title>
+    <meta name="description" content="Eportfolio of Gabriela Betancourth Rodrigues (Minyaw) showcasing skills, work experience, projects, and more.">
+    <meta name="author" content="Gabriela Betancourth Rodrigues">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- JS -->
+    <script src="./assets/js.js" defer></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/818b26abe6.js" crossorigin="anonymous"></script>
+    <!-- Alpine -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  </head>
+
+  <body class="bg-[#000319]">
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 flex items-center justify-center py-6 z-50 border-b border-white/20 transition-all duration-500 ease-in-out">
+      <nav class="flex flex-col items-center space-y-4">
+        <div class="flex space-x-6">
+          <a href="#home" class="text-gray-700 hover:underline font-medium">Home</a>
+          <a href="#projects" class="text-gray-700 hover:underline font-medium">Projects</a>
+          <a href="#cv" class="text-gray-700 hover:underline font-medium">CV</a>
+          <a href="#about" class="text-gray-700 hover:underline font-medium">About me</a>
+        </div>
+      </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="bg-white p-6 flex flex-col md:flex-row items-center justify-center h-[94vh]">
+      <div class="flex items-center space-x-10">
+        <div id="logo" class=" transition-colors duration-500">
+          <!-- Image Logo -->
+          <img src="assets/images/other/logo/logo.svg" alt="Logo" class="w-[15vh]" />
+        </div>
+    
+        <!-- Text + Button -->
+        <div class="text-center md:text-left text-black">
+          <h1 class="text-3xl font-bold">Hi there,</h1>
+          <p class="text-2xl">I'm Minyaw! A creative mind, geeky heart,<br />building the future one pixel at a time.</p>
+          <a id="cv-button" href="#" class="mt-4 inline-block px-6 py-2 text-white rounded-full text-lg font-semibold transition-colors duration-300" style="background-color: #00caff;">Check my CV</a>
+        </div>
+      </div>
+    </section>
+    
+    <script src="assets/js/logoColorSwitcher.js"></script>    
+
+    <!-- Skills -->
+    <section class="bg-[#000319] text-white overflow-hidden justify-items-center py-4">
+      <div class="flex  items-center animate-scroll space-x-8 px-6 w-max">
+        <!-- Group 1 -->
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/c-sharp-c-icon-1822x2048-wuf3ijab.png" alt="C# Icon" class="w-5 h-5">
+          <span>C#</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/css-3.svg" alt="CSS Icon" class="w-5 h-5">
+          <span>CSS</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/java.svg" alt="Java Icon" class="w-5 h-5">
+          <span>Java</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/Javascript-shield.svg.png" alt="JavaScript Icon" class="w-5 h-5">
+          <span>JavaScript</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/mysql-logo.svg" alt="MySQL Icon" class="w-5 h-5">
+          <span>MySQL</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/PHP-logo.svg.png" alt="PHP Icon" class="w-5 h-5">
+          <span>PHP</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/Python-logo-notext.svg.png" alt="Python Icon" class="w-5 h-5">
+          <span>Python</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/Ruby_logo.svg.png" alt="Ruby Icon" class="w-5 h-5">
+          <span>Ruby</span>
+        </span>
+        <span class="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md">
+          <img src="./assets/images/other/icons/Tailwind_CSS_Logo.svg.png" alt="Tailwind Icon" class="w-5 h-5">
+          <span>Tailwind</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-12 px-6 md:px-20">
+      <h2 class="text-2xl font-bold mb-6 text-center text-white">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center md:space-x-10">
+        <div class="flex-1 text-justify text-white">
+          <p class="mb-4">
+            I'm a developer currently studying Computer Science, with a background in Graphic Design, Marketing, and Advertising. I’m passionate about blending creativity with technology to build meaningful digital experiences.
+          </p>
+          <p class="mb-4">
+            My journey started with curiosity and has grown through my university studies, where I’m deepening my skills in programming languages like Java, Python, and PHP, alongside web technologies like HTML, CSS, and JavaScript.
+          </p>
+          <p class="mb-4">
+            With my design and marketing background, I focus on creating user-friendly, visually appealing projects while learning the importance of design systems and clean, scalable code.
+          </p>
+          <p class="mb-4">
+            When I'm not coding, you’ll find me enjoying anime, gaming, and exploring geeky hobbies. I’m always striving to balance my professional growth with personal passions.
+          </p>
+        </div>
+        <img src="./assets/images/other/me2.jpg" alt="My image" class="h-[25vh] mt-6 md:mt-0 rounded-full object-cover">
+      </div>
+    </section>
+
+    <!-- My background -->
+    <section class="bg-white py-12 px-6 md:px-20">
+      <h2 class="text-2xl font-bold mb-10 text-center">My Background</h2>
+      <div class="relative flex flex-col items-center">
+        <div class="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
+          <!-- Moody's with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div class="border-[2px] border-[#ff009b] bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-briefcase pr-2"></i>Moody's
+              </h3>
+              <p class="text-sm text-gray-600 mb-1">Payroll Co-op</p>
+              <p class="text-xs text-gray-500">Sep 2024 - Present</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">Moody's</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Payroll Co-op</p>
+                <p class="text-xs text-gray-500 mb-1">Sep 2024 - Present</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Hybrid (Brussels, Belgium)</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ab? Expedita minus soluta perspiciatis odit dolorem, porro consectetur doloremque rerum saepe sequi veritatis debitis tenetur modi enim iste deserunt earum.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thomas More with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="border-[2px] border-[#ff7600] bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-graduation-cap pr-2"></i>Thomas More University of Applied Sciences
+              </h3>
+              <p class="text-sm text-gray-600 mb-1">Bachelor: Applied Science - Computer Science</p>
+              <p class="text-xs text-gray-500">Sep 2023 - Present</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">Thomas More University of Applied Sciences</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Bachelor of Applied Science - Computer Science</p>
+                <p class="text-xs text-gray-500 mb-1">Sep 2023 - Present</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Geel, Belgium</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur nostrum possimus atque adipisci, dolorum dolor et rem corporis laboriosam architecto voluptate repellendus, natus similique fuga sint officiis quos ipsa maxime!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <!-- EBAC Front-end with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2"><i class="fa-solid fa-certificate pr-2"></i>EBAC - Escola Britânica de Artes Criativas e Tecnologia</h3>
+              <p class="text-sm text-gray-600 mb-1">Front-end Engineer</p>
+              <p class="text-xs text-gray-500">Jul 2023 - Jul 2023</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">EBAC - Escola Britânica de Artes Criativas e Tecnologia</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Certificate: Front-end Engineer</p>
+                <p class="text-xs text-gray-500 mb-1">Jul 2023 - Jul 2023</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Online (São Paulo, Brazil)</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Le Wagon with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-graduation-cap pr-2"></i>Le Wagon
+              </h3>
+              <p class="text-sm text-gray-600 mb-1">Full-Stack Web Developer</p>
+              <p class="text-xs text-gray-500">Mar 2023 - Jun 2023</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">Le Wagon</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Bootcamp: Full-Stack Web Developer</p>
+                <p class="text-xs text-gray-500 mb-1">Mar 2023 - Jun 2023</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Brussels, Belgium</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- EBAC UX/UI with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+            <h3 class="text-lg font-semibold mb-2"><i class="fa-solid fa-certificate pr-2"></i>EBAC - Escola Britânica de Artes Criativas e Tecnologia</h3>
+              <p class="text-sm text-gray-600 mb-1">UX/UI Designer</p>
+              <p class="text-xs text-gray-500">Jan 2022</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">EBAC - Escola Britânica de Artes Criativas e Tecnologia</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Certificate: UX/UI Designer</p>
+                <p class="text-xs text-gray-500 mb-1">Jan 2022</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Online (São Paulo, Brazil)</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grupo GP with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-briefcase pr-2"></i>GRUPO GP ®_ Wake up your product</h3>
+              <p class="text-sm text-gray-600 mb-1">Graphic Designer</p>
+              <p class="text-xs text-gray-500">Mar 2022 - Oct 2022</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">GRUPO GP ®_ Wake up your product</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Graphic Designer</p>
+                <p class="text-xs text-gray-500 mb-1">Mar 2022 - Oct 2022</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Elche(Comunidad Valenciana), Spain</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEDAC with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-graduation-cap pr-2"></i>MEDAC
+              </h3>
+              <p class="text-sm text-gray-600 mb-1">Marketing & Advertising</p>
+              <p class="text-xs text-gray-500">2020 - 2022</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">MEDAC</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Associate Degree: Marketing & Advertising</p>
+                <p class="text-xs text-gray-500 mb-1">2020 - 2022</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Alicante, Spain</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- UNIP with Modal -->
+          <div x-data="{ open: false }" class="relative w-full md:w-[45%]">
+            <!-- Card -->
+            <div 
+              class="bg-gray-100 p-6 rounded-lg shadow cursor-pointer hover:shadow-lg transition"
+              @click="open = true"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                <i class="fa-solid fa-graduation-cap pr-2"></i>UNIP - Universidade Paulista
+              </h3>
+              <p class="text-sm text-gray-600 mb-1">Graphic Design</p>
+              <p class="text-xs text-gray-500">2017 - 2019</p>
+            </div>
+    
+            <!-- Modal -->
+            <div 
+              x-show="open"
+              @click.away="open = false"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+              x-transition
+            >
+              <div class="bg-white rounded-lg p-6 w-[90%] md:w-[600px] shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">UNIP - Universidade Paulista</h3>
+                  <button @click="open = false" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                  </button>
+                </div>
+    
+                <p class="text-sm text-gray-600 mb-1">Associate Degree Graphic Design</p>
+                <p class="text-xs text-gray-500 mb-1">2017 - 2019</p>
+                <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot pr-2"></i>Ribeirao Preto, Brazil</p>
+    
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt possimus quidem eum corporis, impedit explicabo earum sint eaque blanditiis, aspernatur, in fugiat debitis. Temporibus consectetur corrupti magnam eligendi tempora!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam, rerum asperiores soluta totam impedit, earum quae, necessitatibus delectus atque ea placeat ipsam exercitationem magni rem? Optio sint magnam deserunt.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores ad officia possimus minima, deserunt natus doloremque doloribus autem reiciendis sint neque, ea sit illum repudiandae. Doloremque hic iste quo!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-white py-12 px-6 md:px-20">
+      <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <a href="#project1" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <!-- Background Image and Title -->
+          <div class="h-60 bg-cover bg-center" style="background-image: url('./assets/images/projects/dcdentaire.PNG');">
+            <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 class="text-white text-xl font-semibold">Project 1</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="#project2" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <!-- Background Image and Title -->
+          <div class="h-60 bg-cover bg-center" style="background-image: url('./path/to/your/image2.jpg');">
+            <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 class="text-white text-xl font-semibold">Project 2</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="#project3" class="relative group block overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:z-10">
+          <!-- Background Image and Title -->
+          <div class="h-60 bg-cover bg-center" style="background-image: url('./path/to/your/image3.jpg');">
+            <div class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 class="text-white text-xl font-semibold">Project 3</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+        
+        <!-- Logo -->
+        <div class="flex items-center justify-center space-x-2">
+          <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-20">
+        </div>
+        
+        <!-- Navigation -->
+        <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+          <h3 class="font-semibold text-lg">Navigation</h3>
+          <a href="#home" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
+          <a href="#projects" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
+          <a href="#cv" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
+          <a href="#about" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
+        </div>
+        
+        <!-- Find Me (Social Media Links) -->
+        <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+          <h3 class="font-semibold text-lg">Find Me</h3>
+          <a href="https://github.com/Minyaaw" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+            GitHub
+            <i class="fab fa-github fa-lg ml-2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+            LinkedIn
+            <i class="fab fa-linkedin fa-lg ml-2"></i>
+          </a>
+        </div>
+    
+        <!-- Language Switcher -->
+        <div class="flex space-x-4 justify-center">
+          <button class="text-sm text-gray-400 hover:text-gray-200">EN</button>
+          <button class="text-sm text-gray-400 hover:text-gray-200">ES</button>
+          <button class="text-sm text-gray-400 hover:text-gray-200">PT</button>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="text-center text-white text-sm py-4">
+      © 2025 Gabriela Betancourth Rodrigues. All rights reserved.
+    </div>
+
+  </body>
+</html>
