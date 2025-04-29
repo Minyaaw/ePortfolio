@@ -17,24 +17,66 @@ document.addEventListener("DOMContentLoaded", function () {
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
     }, false);
   });
+
+  // Color switch logo and button
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = [
+      "assets/images/other/logo/Naranja.png",
+      "assets/images/other/logo/Morado.png",
+      "assets/images/other/logo/Rosa.png",
+      "assets/images/other/logo/Azul.png"
+    ];
   
-// Switch colors
-document.addEventListener("DOMContentLoaded", () => {
-  const colors = ["#ff7600", "#b600ff", "#ff009b", "#00caff"];
-  let current = 0;
-
-  const logo = document.getElementById("logo");
-  const button = document.getElementById("cv-button");
-
-  setInterval(() => {
-    const color = colors[current];
-    current = (current + 1) % colors.length;
-
-    // Change button background color
-    button.style.backgroundColor = color;
-
-    // Tint the black SVG with a CSS filter (best if logo is solid black)
-    logo.style.filter = `brightness(0) saturate(100%) sepia(100%) hue-rotate(0deg) drop-shadow(0 0 0 ${color})`;
-
-  }, 2000);
-});
+    const buttonColors = [
+      "#ff7600",
+      "#b600ff",
+      "#ff009b",
+      "#00caff"
+    ];
+  
+    const logoImg = document.getElementById("logo-img");
+    const button = document.getElementById("cv-button");
+  
+    let lastImgIndex = -1;
+    let lastColorIndex = -1;
+  
+    function getNewIndex(lastIndex, excludeIndex) {
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * images.length);
+      } while (newIndex === lastIndex || newIndex === excludeIndex);
+      return newIndex;
+    }
+  
+    // 🟡 Initial randomization (to prevent blue-blue)
+    const initialImgIndex = Math.floor(Math.random() * images.length);
+    let initialColorIndex;
+    do {
+      initialColorIndex = Math.floor(Math.random() * buttonColors.length);
+    } while (initialColorIndex === initialImgIndex);
+  
+    logoImg.src = images[initialImgIndex];
+    button.style.backgroundColor = buttonColors[initialColorIndex];
+  
+    lastImgIndex = initialImgIndex;
+    lastColorIndex = initialColorIndex;
+  
+    // 🔁 Continue switching every 2s
+    setInterval(() => {
+      logoImg.classList.add("opacity-0");
+  
+      setTimeout(() => {
+        const newImgIndex = getNewIndex(lastImgIndex, lastColorIndex);
+        const newColorIndex = getNewIndex(lastColorIndex, newImgIndex);
+  
+        logoImg.src = images[newImgIndex];
+        lastImgIndex = newImgIndex;
+  
+        button.style.backgroundColor = buttonColors[newColorIndex];
+        lastColorIndex = newColorIndex;
+  
+        logoImg.classList.remove("opacity-0");
+      }, 200);
+    }, 2000);
+  });
+  

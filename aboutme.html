@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minyaw | E-Portfolio</title>
+        <meta name="description" content="Eportfolio of Gabriela Betancourth Rodrigues (Minyaw) showcasing skills, work experience, projects, and more.">
+        <meta name="author" content="Gabriela Betancourth Rodrigues">
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- JS -->
+        <script src="./assets/js.js" defer></script>
+        <!-- My CSS -->
+        <link rel="stylesheet" href="./assets/style.css">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/818b26abe6.js" crossorigin="anonymous"></script>
+        <!-- Alpine -->
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    </head>
+
+    <body class="bg-[#000319]">
+        <!-- Navbar -->
+        <header id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 flex items-center justify-center py-6 z-50 border-b border-white/20 transition-all duration-500 ease-in-out">
+            <nav class="flex flex-col items-center space-y-4">
+                <div class="flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:underline font-medium">Home</a>
+                <a href="aboutme.html" class="text-gray-700 hover:underline font-medium">About me</a>
+                <a href="projectsPage.html" class="text-gray-700 hover:underline font-medium">Projects</a>
+                <a href="cv.html" class="text-gray-700 hover:underline font-medium">CV</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-12 px-6 md:px-20 bg-white">
+            <!-- About me -->
+            <div class="flex flex-col md:flex-row items-center mt-[5vh] md:space-x-10">
+                <!-- Div 1.1 (Title & Text) -->
+                <div class="flex-1 text-justify mb-6 md:mb-0">
+                    <h2 class="text-3xl font-bold text-center md:text-left text-gray-800 mb-4">About Me</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                    Hi! My name is Gabriela Betancourth Rodrigues, I’m 24 years old, and I’m currently studying Applied Computer Science(ACS) at Thomas More Geel. As a developer with a background in Graphic Design and Marketing & Advertising, I’m passionate about blending creativity with technology to create meaningful digital experiences.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                    My journey began with curiosity and has evolved through my university studies, where I’m deepening my skills in programming languages and different frameworks.
+                    </p>
+                
+                    <h3 class="text-2xl font-semibold text-center md:text-left text-gray-800 mt-8 mb-4">Why I Chose ACS?</h3>
+                    <ul class="list-disc pl-6 text-lg text-gray-700 mb-4 space-y-2">
+                        <li>The flexibility of the field lets me explore diverse technologies and creative approaches.</li>
+                        <li>Its mix of problem-solving and creativity matches my interests and encourages constant growth.</li>
+                        <li>My design and marketing background sparked my tech curiosity, and each new concept deepens it.</li>
+                    </ul>
+                    <p class="text-lg text-gray-700 mb-4">
+                    Applied Computer Science is a journey that challenges me to think in new ways, continuously pushing me forward.
+                    </p>
+
+                </div>
+                
+                <!-- Div 1.2 (Image & Download CV Button) -->
+                <div class="flex-1">
+                    <div class="relative inline-block">
+                    <img src="assets/images/other/me.jpg" alt="My Image" class="h-[30vh] md:h-[40vh] rounded-xl object-cover">
+                    <a href="assets/images/other/mycv.pdf" download
+                        class="absolute bottom-2 right-2 px-4 py-2 bg-[#b600ff] text-white rounded-full font-semibold hover:bg-[#680590] transition-colors duration-300 text-sm">
+                        Download CV
+                    </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Hobbies with GIFs -->
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">My Hobbies</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                
+                <!-- Gaming -->
+                <div class="flex flex-col items-center">
+                    <img src="https://i.pinimg.com/originals/ce/13/94/ce13946558a6c49356ed179cbaf19fce.gif" 
+                        alt="Gaming" 
+                        class="rounded-full h-[20vh] w-[20vh] object-cover mb-2 shadow-sm" />
+                    <span class="text-gray-700">Gaming</span>
+                </div>
+            
+                <!-- Travel -->
+                <div class="flex flex-col items-center">
+                    <img src="https://i.pinimg.com/originals/6d/49/17/6d491792fabab5c70ae76e4bd68645af.gif" 
+                        alt="Travel" 
+                        class="rounded-full h-[20vh] w-[20vh] object-cover mb-2  shadow-sm" />
+                    <span class="text-gray-700">Traveling</span>
+                </div>
+            
+                <!-- Cooking -->
+                <div class="flex flex-col items-center">
+                    <img src="https://i.pinimg.com/originals/91/c6/c6/91c6c66c6a02d231896934ebc912a0c5.gif" 
+                        alt="Cooking" 
+                        class="rounded-full h-[20vh] w-[20vh] object-cover mb-2 shadow-sm" />
+                    <span class="text-gray-700">Cooking</span>
+                </div>
+                </div>
+            
+                <p class="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
+                <span class="font-bold">Video games</span> sharpen my strategy, adaptability, and teamwork — key skills for problem-solving in tech. 
+                <span class="font-bold">Traveling</span> broadens my perspective and enhances my adaptability. 
+                <span class="font-bold">Cooking</span> fuels creativity and a willingness to experiment, much like learning new tech. 
+                These hobbies keep me curious, resilient, and open to growth.
+                </p>
+            </div>
+
+            <!-- Future -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Div 3.1 (Personal Dreams) -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-4">Personal Dreams</h3>
+                <p class="text-center text-gray-700">
+                    I want to keep exploring the world and learning from different cultures while using tech to create meaningful connections. My dream is to combine creativity and code to empower others.
+                </p>
+                </div>
+            
+                <!-- Div 3.2 (Professional Ambitions) -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-4">Professional Ambitions</h3>
+                <p class="text-center text-gray-700">
+                    I'm interested in the data world, AI, and automation—building tools that simplify daily life by merging strong backend performance with intuitive design.
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-8 mt-12">
+            <div class="container mx-auto flex flex-col md:flex-row justify-around items-start gap-8">
+              
+              <!-- Logo -->
+              <div class="flex items-center justify-center space-x-2">
+                <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-[5vh]">
+              </div>
+              
+              <!-- Navigation -->
+              <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+                <h3 class="font-semibold text-lg">Navigation</h3>
+                <a href="index.html" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
+                <a href="projectsPage.html" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
+                <a href="cv.html" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
+                <a href="aboutme.html" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
+              </div>
+              
+              <!-- Find Me (Social Media Links) -->
+              <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+                <h3 class="font-semibold text-lg">Find Me</h3>
+                <a href="https://github.com/Minyaaw" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+                  GitHub
+                  <i class="fab fa-github fa-lg ml-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+                  LinkedIn
+                  <i class="fab fa-linkedin fa-lg ml-2"></i>
+                </a>
+                <a href="https://www.behance.net/betancourthgab" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">Behance<i class="fa-brands fa-square-behance fa-lg ml-2"></i>
+                </a>
+              </div>
+          
+              <!-- Language Switcher -->
+              <div class="flex space-x-4 justify-center">
+                <button class="text-sm text-gray-400 hover:text-gray-200">EN</button>
+                <button class="text-sm text-gray-400 hover:text-gray-200">ES</button>
+                <button class="text-sm text-gray-400 hover:text-gray-200">PT</button>
+              </div>
+            </div>
+        </footer>
+        <div class="text-center text-white text-sm py-4">
+            © 2025 Gabriela Betancourth Rodrigues. All rights reserved.
+        </div>
+    </body>
+</html>
