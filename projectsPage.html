@@ -32,6 +32,307 @@
             </nav>
         </header>
 
+        <!-- Projects -->
+        <section id="projects" class="bg-white py-12 px-6 md:px-20 ">
+            <h2 class="mt-[5vh] text-3xl font-bold mb-6 text-center text-black">My Projects</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <!-- Project 1 -->
+            <a href="projects/project1.html" class="group block bg-white rounded-xl shadow-md overflow-hidden transition-all hover:scale-105">
+                <div class="w-full h-[650px] bg-cover bg-center" style="background-image: url('./assets/images/projects/dcdentaire.PNG');">
+                <div class="flex items-center justify-center h-full w-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white text-lg font-semibold">Project 1</h3>
+                </div>
+                </div>
+            </a>
+        
+            <!-- Project 2 -->
+            <a href="projects/project2.html" class="group block bg-white rounded-xl shadow-md overflow-hidden transition-all hover:scale-105">
+                <div class="w-full h-[650px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project2.jpg');">
+                <div class="flex items-center justify-center h-full w-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white text-lg font-semibold">Project 2</h3>
+                </div>
+                </div>
+            </a>
+        
+            <!-- Project 3 -->
+            <a href="projects/project3.html" class="group block bg-white rounded-xl shadow-md overflow-hidden transition-all hover:scale-105">
+                <div class="w-full h-[650px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project3.jpg');">
+                <div class="flex items-center justify-center h-full w-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white text-lg font-semibold">Project 3</h3>
+                </div>
+                </div>
+            </a>
+        
+            <!-- Project 4 -->
+            <a href="projects/project4.html" class="group block bg-white rounded-xl shadow-md overflow-hidden transition-all hover:scale-105">
+                <div class="w-full h-[650px] bg-cover bg-center" style="background-image: url('./assets/images/projects/project4.jpg');">
+                <div class="flex items-center justify-center h-full w-full bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-white text-lg font-semibold">Project 4</h3>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <p class="text-center text-gray-700 max-w-3xl mx-auto mb-10">
+                Over the past two years, I’ve brought ideas to life through hands-on development, design, and teamwork — from polished full-stack builds to experimental tools. 
+                Below, you’ll find a collection of projects, each reflecting the skills I’ve honed and the values I bring to my work. 
+                But before diving in, scroll through the strengths — both technical and human — that drive how I build, collaborate, and grow.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="bg-[#000319] py-16 px-6 md:px-20 text-white">
+            <h2 class="text-3xl font-bold text-center mb-12">My Skillset</h2>
+            <div class="space-y-16">
+                <!-- Backend -->
+                <div x-data="{ open: true }" class="mb-8">
+                    <h3 
+                    class="text-white text-2xl font-semibold border-b-4 border-[#b600ff] inline-block mb-6 cursor-pointer"
+                    @click="open = !open"
+                    :class="{ 'text-[#b600ff]': open }"
+                    >
+                    Backend
+                    <span class="ml-2">
+                        <svg x-show="!open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <svg x-show="open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </span>
+                    </h3>
+                    <div x-show="open" x-transition class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Ruby</div>
+                        <div class="text-xs text-gray-400">Programming Language</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Node.js</div>
+                        <div class="text-xs text-gray-400">JavaScript Runtime</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Laravel</div>
+                        <div class="text-xs text-gray-400">PHP Framework</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Java</div>
+                        <div class="text-xs text-gray-400">OOP Language</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">PHP</div>
+                        <div class="text-xs text-gray-400">Programming Language</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Python</div>
+                        <div class="text-xs text-gray-400">Programming Language</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">C#</div>
+                        <div class="text-xs text-gray-400">Programming Language</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">REST</div>
+                        <div class="text-xs text-gray-400">API Protocol</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#b600ff] transition-all duration-300">
+                        <div class="font-semibold">Powershell</div>
+                        <div class="text-xs text-gray-400">Scripting Language</div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Frontend -->
+                <div x-data="{ open: false }" class="mb-8">
+                    <h3 
+                    class="text-white text-2xl font-semibold border-b-4 border-[#ff009b] inline-block mb-6 cursor-pointer"
+                    @click="open = !open"
+                    :class="{ 'text-[#ff009b]': open }"
+                    >
+                    Frontend
+                    <span class="ml-2">
+                        <svg x-show="!open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <svg x-show="open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </span>
+                    </h3>
+                    <div x-show="open" x-transition class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">HTML</div>
+                        <div class="text-xs text-gray-400">Web Markup</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">JavaScript</div>
+                        <div class="text-xs text-gray-400">Frontend Logic</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Tailwind CSS</div>
+                        <div class="text-xs text-gray-400">Utility-first CSS</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">React</div>
+                        <div class="text-xs text-gray-400">JS Library</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Alpine</div>
+                        <div class="text-xs text-gray-400">Minimal JS Framework</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Bootstrap</div>
+                        <div class="text-xs text-gray-400">CSS Framework</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">SCSS / SASS</div>
+                        <div class="text-xs text-gray-400">CSS Preprocessors</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Photoshop</div>
+                        <div class="text-xs text-gray-400">Design Software</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Illustrator</div>
+                        <div class="text-xs text-gray-400">Design Software</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff009b] transition-all duration-300">
+                        <div class="font-semibold">Livewire</div>
+                        <div class="text-xs text-gray-400">Laravel Component</div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Database -->
+                <div x-data="{ open: false }" class="mb-8">
+                    <h3 
+                    class="text-white text-2xl font-semibold border-b-4 border-[#00caff] inline-block mb-6 cursor-pointer"
+                    @click="open = !open"
+                    :class="{ 'text-[#00caff]': open }"
+                    >
+                    Database
+                    <span class="ml-2">
+                        <svg x-show="!open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <svg x-show="open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </span>
+                    </h3>
+                    <div x-show="open" x-transition class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00caff] transition-all duration-300">
+                        <div class="font-semibold">MySQL</div>
+                        <div class="text-xs text-gray-400">Relational Database</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00caff] transition-all duration-300">
+                        <div class="font-semibold">MongoDB</div>
+                        <div class="text-xs text-gray-400">NoSQL Database</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00caff] transition-all duration-300">
+                        <div class="font-semibold">SQLite</div>
+                        <div class="text-xs text-gray-400">Embedded Database</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00caff] transition-all duration-300">
+                        <div class="font-semibold">Microsoft SQL Server</div>
+                        <div class="text-xs text-gray-400">Relational DBMS</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00caff] transition-all duration-300">
+                        <div class="font-semibold">Qlik</div>
+                        <div class="text-xs text-gray-400">Data Visualization</div>
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- AI / Data Science / Machine Learning -->
+                <div x-data="{ open: false }" class="mb-8">
+                    <h3 
+                    class="text-white text-2xl font-semibold border-b-4 border-[#ff8a00] inline-block mb-6 cursor-pointer"
+                    @click="open = !open"
+                    :class="{ 'text-[#ff8a00]': open }"
+                    >
+                    AI / Data Science / Machine Learning
+                    <span class="ml-2">
+                        <svg x-show="!open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <svg x-show="open" class="inline w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </span>
+                    </h3>
+                    <div x-show="open" x-transition class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff8a00] transition-all duration-300">
+                        <div class="font-semibold">TensorFlow</div>
+                        <div class="text-xs text-gray-400">AI Framework</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff8a00] transition-all duration-300">
+                        <div class="font-semibold">NumPy</div>
+                        <div class="text-xs text-gray-400">Data Science Library</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff8a00] transition-all duration-300">
+                        <div class="font-semibold">Pandas</div>
+                        <div class="text-xs text-gray-400">Data Analysis</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#ff8a00] transition-all duration-300">
+                        <div class="font-semibold">Matplotlib</div>
+                        <div class="text-xs text-gray-400">Data Visualization</div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps (Collapsible) -->
+                <div x-data="{ open: false }" class="mb-8">
+                    <h3 
+                    class="text-white text-2xl font-semibold border-b-4 border-[#ffffff] inline-block mb-6 cursor-pointer transition-all duration-300"
+                    @click="open = !open"
+                    :class="{ 'text-[#ffffff]': !open, 'text-[#ffffff]': open }"
+                    >
+                    Cloud & DevOps
+                    <span class="ml-2 text-sm align-middle">
+                        <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="inline w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="inline w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </span>
+                    </h3>
+                
+                    <div x-show="open" x-transition.duration.300ms class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">AWS</div>
+                        <div class="text-xs text-gray-400">Cloud Services</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">Heroku</div>
+                        <div class="text-xs text-gray-400">PaaS Platform</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">Docker</div>
+                        <div class="text-xs text-gray-400">Containerization</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">Docker Compose</div>
+                        <div class="text-xs text-gray-400">Multi-container Docker</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">Git</div>
+                        <div class="text-xs text-gray-400">Version Control</div>
+                    </div>
+                    <div class="bg-[#0a0a23] p-5 rounded-xl text-center hover:ring-2 hover:ring-[#00ffaa] transition-all duration-300">
+                        <div class="font-semibold">Linux</div>
+                        <div class="text-xs text-gray-400">Operating System</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
         <!-- Footer -->
         <footer class="bg-gray-900 text-white py-8 mt-12">
             <div class="container mx-auto flex flex-col md:flex-row justify-around items-start gap-8">
