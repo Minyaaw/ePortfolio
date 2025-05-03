@@ -21,14 +21,22 @@
 
     <body class="bg-[#000319]">
         <!-- Navbar -->
-        <header id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 flex items-center justify-center py-6 z-50 border-b border-white/20 transition-all duration-500 ease-in-out">
-            <nav class="flex flex-col items-center space-y-4">
-                <div class="flex space-x-6">
-                    <a href="../index.html" class="text-gray-700 hover:underline font-medium">Home</a>
-                    <a href="../aboutme.html" class="text-gray-700 hover:underline font-medium">About me</a>
-                    <a href="../projectsPage.html" class="text-gray-700 hover:underline font-medium">Projects</a>
-                    <a href="../cv.html" class="text-gray-700 hover:underline font-medium">CV</a>
-                </div>
+        <header id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 flex items-center justify-between px-6 py-4 z-50 border-b border-white/20 transition-all duration-500 ease-in-out">
+            <!-- Logo on the left -->
+            <div class="flex items-center">
+              <a href="index.html">
+                <img src="../assets/images/other/logo/Naranja.png" alt="Logo" class="w-[40px] h-auto mr-4" />
+              </a>
+            </div>
+          
+            <!-- Navigation in the center -->
+            <nav class="flex-1 flex justify-center">
+              <div class="flex space-x-6">
+                <a href="../index.html" class="text-gray-700 hover:underline font-medium">Home</a>
+                <a href="../aboutme.html" class="text-gray-700 hover:underline font-medium">About me</a>
+                <a href="../projectsPage.html" class="text-gray-700 hover:underline font-medium">Projects</a>
+                <a href="../cv.html" class="text-gray-700 hover:underline font-medium">CV</a>
+              </div>
             </nav>
         </header>
 
@@ -176,42 +184,34 @@
         <!-- Footer -->
         <footer class="bg-gray-900 text-white py-8 mt-12">
             <div class="container mx-auto flex flex-col md:flex-row justify-around items-start gap-8">
-            
-            <!-- Logo -->
-            <div class="flex items-center justify-center space-x-2">
-                <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-[5vh]">
-            </div>
-            
-            <!-- Navigation -->
-            <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
-                <h3 class="font-semibold text-lg">Navigation</h3>
-                <a href="#home" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
-                <a href="#projects" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
-                <a href="#cv" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
-                <a href="#about" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
-            </div>
-            
-            <!-- Find Me (Social Media Links) -->
-            <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
-                <h3 class="font-semibold text-lg">Find Me</h3>
-                <a href="https://github.com/Minyaaw" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
-                GitHub
-                <i class="fab fa-github fa-lg ml-2"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
-                LinkedIn
-                <i class="fab fa-linkedin fa-lg ml-2"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">Behance<i class="fa-brands fa-square-behance fa-lg ml-2"></i>
-                </a>
-            </div>
-        
-            <!-- Language Switcher -->
-            <div class="flex space-x-4 justify-center">
-                <button class="text-sm text-gray-400 hover:text-gray-200">EN</button>
-                <button class="text-sm text-gray-400 hover:text-gray-200">ES</button>
-                <button class="text-sm text-gray-400 hover:text-gray-200">PT</button>
-            </div>
+                <!-- Logo -->
+                <div class="flex items-center justify-center space-x-2">
+                    <img src="./assets/images/other/logo/Rosa.png" alt="Minyaw Logo" class="w-[5vh]">
+                </div>
+                
+                <!-- Navigation -->
+                <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+                    <h3 class="font-semibold text-lg">Navigation</h3>
+                    <a href="../index.html" class="text-sm text-gray-400 hover:text-gray-200">Home</a>
+                    <a href="../projectsPage.html" class="text-sm text-gray-400 hover:text-gray-200">Projects</a>
+                    <a href="../cv.html" class="text-sm text-gray-400 hover:text-gray-200">CV</a>
+                    <a href="../aboutme.html" class="text-sm text-gray-400 hover:text-gray-200">About Me</a>
+                </div>
+                
+                <!-- Find Me (Social Media Links) -->
+                <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+                    <h3 class="font-semibold text-lg">Find Me</h3>
+                    <a href="https://github.com/Minyaaw" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+                    GitHub
+                    <i class="fab fa-github fa-lg ml-2"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">
+                    LinkedIn
+                    <i class="fab fa-linkedin fa-lg ml-2"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/betancourthgab/" target="_blank" class="text-sm text-gray-400 hover:text-gray-200">Behance<i class="fa-brands fa-square-behance fa-lg ml-2"></i>
+                    </a>
+                </div>
             </div>
         </footer>
         <div class="text-center text-white text-sm py-4">

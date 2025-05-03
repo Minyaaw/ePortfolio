@@ -6,7 +6,7 @@ Welcome to my interactive e-portfolio! This project showcases my academic and pe
 
 ## 📁 Live Website
 
-🔗 [Visit my e-Portfolio](https://your-deployed-link-here.com)
+🔗 [Visit my e-Portfolio](https://minyaw.com)
 
 ---
 
@@ -30,7 +30,7 @@ This portfolio is built using:
 - Ensured accessibility for 3 types of users: students, coaches, and admins.
 - **Role**: UI/UX lead, documentation support, system analysis.
 
-👉 [Figma Link](#) *(Link placeholder — update if available)*
+👉 [Figma Link](https://www.figma.com/proto/2T5qebCWypyaBKJcoOqnMx/EduQuest?node-id=341-454&t=5HCBTjtxmw5Dh79e-1)
 
 ---
 
@@ -61,13 +61,6 @@ This portfolio is built using:
 - 📈 Used **Jira** and **Scrum methodology** in real-world sprints
 - 🎯 Focus on usability, structure, and real-world tools
 - 🤝 Collaboration, peer support, and iterative improvements
-
----
-
-## 📸 Screenshots
-
-> ![EduQuest Dashboard](./assets/images/projects/skills2Part1/skills2part1dashboard.PNG)
-> ![IoT Turret](./assets/images/projects/iot/iot2.PNG)
 
 ---
 
